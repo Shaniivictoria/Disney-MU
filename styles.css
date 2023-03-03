@@ -1,0 +1,55 @@
+body{
+    background: black;
+    text-align: center;
+}
+
+h1{
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.mainContainer{
+    /*border: solid yellow; */
+    height: 42vh;
+}
+
+.rowOne, .rowTwo{
+    /*border: solid seagreen; */
+    height: 45%;
+    margin: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block{
+    width: 33%;
+    /*border: solid red;*/
+}
+
+.pic{
+    width: 100%;
+    height: 70%;
+}
+
+.secondContainer{
+    border: solid green;
+    height: 42vh;
+}
